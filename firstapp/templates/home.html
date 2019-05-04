@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html lang='ko'>
-<head>
-    <meta charset='UTF-8'>
+
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
     <title>title</title>
 
     <style>
-        h1,p{
-            text-align:center;
-        }
-        p{
-            display:inline;
-        }
-        a{
-            border-radius:20px;
-            background-color:blue;
-            width:100px;
-            height:30px;
-        }
-        a:hover{
-            background-color:yellow;
-            
-        }
-        
+ 
     </style>
-</head>
-<body>
-    <h1> 제목 </h1>
-    <p>
-    <a href="{% url 'recom_food' %}" >소비자</a>
-    <a href="{% url 'recom_food' %}" >창업자</a>
-    </p>
-    
-</body>
+      {%load static%}
+      <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>먹어본 놈들!</h1>
+      <p>
+        
+          <a href="{% url 'recom_food' %}">사장님</a>
+        
+        
+        
+        <a href="{% url 'recom_food' %}">손님</a>
+        
+        
+      </p>
+    </div>
+      
+      
+  </body>
+
 </html>

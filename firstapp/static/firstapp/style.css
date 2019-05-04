@@ -1,0 +1,29 @@
+body{
+            background-image: url('../static/firstapp/ba.jpg');
+        }
+      h1,
+      p {
+        text-align: center;
+      }
+      p {
+        display: inline;
+      }
+      a {
+        border-radius: 20px;
+        background-color: blue;
+        width: 100px;
+        height: 30px;
+      }
+      a:hover {
+        background-color: yellow;
+      }
+    .left-box {
+      background: white;
+      float: left;
+      width: 50%;
+      }
+    .right-box {
+    background: blue;
+    float: right;
+    width: 50%;
+    }
